@@ -49,7 +49,7 @@ jobs:
     - name: Create Function App artifact
       shell: bash
       run: |
-        pushd "{{ env.FUNCTION_APP_PATH}}"
+        pushd "{{ env.FUNCTION_APP_PATH }}"
         dotnet publish . -c Release -o published
         popd
 
